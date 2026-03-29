@@ -22,12 +22,23 @@ const categoryColors = {
   "Oceania": { h: 195, l: 45, text: '#000000' },
 
   // Subdivisions
-  "France": { h: 220, l: 40, text: '#ffffff' },       // Blue
-  "USA": { h: 240, l: 30, text: '#ffffff' },          // Navy Blue
-  "Canada": { h: 0, l: 45, text: '#ffffff' },         // Red
-  "Germany": { h: 45, l: 50, text: '#000000' },       // Gold
-  "Switzerland": { h: 350, l: 45, text: '#ffffff' },  // Swiss Red
-  "UK": { h: 230, l: 35, text: '#ffffff' }            // Royal Blue
+  "France": { h: 220, l: 40, text: '#ffffff' },       
+  "USA": { h: 240, l: 30, text: '#ffffff' },          
+  "Canada": { h: 0, l: 45, text: '#ffffff' },         
+  "Germany": { h: 45, l: 50, text: '#000000' },       
+  "Switzerland": { h: 350, l: 45, text: '#ffffff' },  
+  "UK": { h: 230, l: 35, text: '#ffffff' },
+
+  // Serious - Alphabets
+  "Latin Alphabet": { h: 20, l: 40, text: '#ffffff' },     // Burnt Orange
+  "Hiragana": { h: 340, l: 60, text: '#ffffff' },          // Cherry Blossom Pink
+  "Katakana": { h: 200, l: 45, text: '#ffffff' },          // Steel Blue
+
+  // Serious - Numbers
+  "First 50 Natural Numbers": { h: 160, l: 35, text: '#ffffff' }, // Sea Green
+  "First 50 Prime Numbers": { h: 280, l: 40, text: '#ffffff' },   // Deep Purple
+  "First 50 Triangle Numbers": { h: 50, l: 50, text: '#000000' }, // Yellow/Gold
+  "First 50 Powers of 2": { h: 0, l: 25, text: '#ffffff' }        // Dark Red
 };
 
 const appData = {
@@ -145,10 +156,10 @@ const appData = {
     },
     "Subdivisions": {
       "France": [
-        "Auvergne-Rhone-Alpes", "Bourgogne-Franche-Comte", "Brittany", "Centre-Val de Loire", "Corsica", 
-        "Grand Est", "Hauts-de-France", "Ile-de-France", "Normandy", "Nouvelle-Aquitaine", "Occitanie", 
-        "Pays de la Loire", "Provence-Alpes-Cote d'Azur", "French Guiana", "Guadeloupe", "Martinique", 
-        "Mayotte", "Reunion"
+        "Auvergne-Rhône-Alpes", "Bourgogne-Franche-Comté", "Brittany", "Centre-Val de Loire", "Corsica", 
+        "Grand Est", "Hauts-de-France", "Île-de-France", "Normandy", "Nouvelle-Aquitaine", "Occitanie", 
+        "Pays de la Loire", "Provence-Alpes-Côte d'Azur", "French Guiana", "Guadeloupe", "Martinique", 
+        "Mayotte", "Réunion"
       ],
       "USA": [
         "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", 
@@ -177,6 +188,58 @@ const appData = {
       ],
       "UK": [
         "England", "Scotland", "Wales", "Northern Ireland"
+      ]
+    }
+  },
+  "Serious": {
+    "Alphabet": {
+      "Latin Alphabet": [
+        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
+        "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+      ],
+      "Hiragana": [
+        "あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", 
+        "さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と", 
+        "な", "に", "ぬ", "ね", "の", "は", "ひ", "ふ", "へ", "ほ", 
+        "ま", "み", "む", "め", "も", "や", "ゆ", "よ", 
+        "ら", "り", "る", "れ", "ろ", "わ", "を", "ん"
+      ],
+      "Katakana": [
+        "ア", "イ", "ウ", "エ", "オ", "カ", "キ", "ク", "ケ", "コ", 
+        "サ", "シ", "ス", "セ", "ソ", "タ", "チ", "ツ", "テ", "ト", 
+        "ナ", "ニ", "ヌ", "ネ", "ノ", "ハ", "ヒ", "フ", "ヘ", "ホ", 
+        "マ", "ミ", "ム", "メ", "モ", "ヤ", "ユ", "ヨ", 
+        "ラ", "リ", "ル", "レ", "ロ", "ワ", "ヲ", "ン"
+      ]
+    },
+    "Numbers": {
+      "First 50 Natural Numbers": [
+        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+        "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", 
+        "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", 
+        "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", 
+        "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"
+      ],
+      "First 50 Prime Numbers": [
+        "2", "3", "5", "7", "11", "13", "17", "19", "23", "29", 
+        "31", "37", "41", "43", "47", "53", "59", "61", "67", "71", 
+        "73", "79", "83", "89", "97", "101", "103", "107", "109", "113", 
+        "127", "131", "137", "139", "149", "151", "157", "163", "167", "173", 
+        "179", "181", "191", "193", "197", "199", "211", "223", "227", "229"
+      ],
+      "First 50 Triangle Numbers": [
+        "1", "3", "6", "10", "15", "21", "28", "36", "45", "55", 
+        "66", "78", "91", "105", "120", "136", "153", "171", "190", "210", 
+        "231", "253", "276", "300", "325", "351", "378", "406", "435", "465", 
+        "496", "528", "561", "595", "630", "666", "703", "741", "780", "820", 
+        "861", "903", "946", "990", "1035", "1081", "1128", "1176", "1225", "1275"
+      ],
+      "First 50 Powers of 2": [
+        "1", "2", "4", "8", "16", "32", "64", "128", "256", "512", 
+        "1024", "2048", "4096", "8192", "16384", "32768", "65536", "131072", "262144", "524288", 
+        "1048576", "2097152", "4194304", "8388608", "16777216", "33554432", "67108864", "134217728", "268435456", "536870912", 
+        "1073741824", "2147483648", "4294967296", "8589934592", "17179869184", "34359738368", "68719476736", "137438953472", "274877906944", "549755813888", 
+        "1099511627776", "2199023255552", "4398046511104", "8796093022208", "17592186044416", "35184372088832", "70368744177664", "140737488355328", "281474976710656", "562949953421312"
       ]
     }
   }
