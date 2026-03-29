@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Memory Tester</h1>
+    </header>
+
+    <main>
+        <div id="setup-card" class="card">
+            <h2>Select Subject</h2>
+            
+            <div class="input-group">
+                <label for="category">Category</label>
+                <select id="category"></select>
+            </div>
+
+            <div class="input-group">
+                <label for="subcategory">Subcategory</label>
+                <select id="subcategory"></select>
+            </div>
+
+            <div class="input-group">
+                <label>Select Sets to Test</label>
+                <div class="controls">
+                    <button class="text-btn" id="btn-select-all">Select All</button>
+                    <button class="text-btn" id="btn-deselect-all">Deselect All</button>
+                </div>
+                <div id="subsubcategories-container" class="checkbox-grid"></div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">Start Testing</button>
+        </div>
+
+        <div id="test-card" class="card hidden full-width">
+            <div class="test-header">
+                <h2>Recall Test</h2>
+                <div class="header-controls">
+                    <button id="give-up-btn" class="secondary-btn">Give Up & Show Missing</button>
+                    <button id="reset-btn" class="text-btn">Back to Setup</button>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-box">
+                    Slots Filled: <span id="count-found">0</span> / <span id="count-total">0</span> 
+                    (<span id="count-percentage">0%</span>)
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="answer-input" placeholder="Type an item and press Enter..." autocomplete="off">
+            </div>
+
+            <div id="status-message" class="status-message hidden"></div>
+
+            <div id="boards-container" class="boards-container">
+                </div>
+        </div>
+    </main>
+
+    <script src="list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
