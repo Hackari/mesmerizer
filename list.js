@@ -145,10 +145,10 @@ const appData = {
     },
     "Subdivisions": {
       "France": [
-        "Auvergne-Rhône-Alpes", "Bourgogne-Franche-Comté", "Brittany", "Centre-Val de Loire", "Corsica", 
-        "Grand Est", "Hauts-de-France", "Île-de-France", "Normandy", "Nouvelle-Aquitaine", "Occitanie", 
-        "Pays de la Loire", "Provence-Alpes-Côte d'Azur", "French Guiana", "Guadeloupe", "Martinique", 
-        "Mayotte", "Réunion"
+        "Auvergne-Rhone-Alpes", "Bourgogne-Franche-Comte", "Brittany", "Centre-Val de Loire", "Corsica", 
+        "Grand Est", "Hauts-de-France", "Ile-de-France", "Normandy", "Nouvelle-Aquitaine", "Occitanie", 
+        "Pays de la Loire", "Provence-Alpes-Cote d'Azur", "French Guiana", "Guadeloupe", "Martinique", 
+        "Mayotte", "Reunion"
       ],
       "USA": [
         "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", 
